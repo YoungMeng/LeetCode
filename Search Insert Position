@@ -17,7 +17,7 @@ public class Solution {
         
         int left = 0;
         int right = nums.length - 1;
-        while(left <= right){
+        while(left < right){
             int mid = (left + right) >> 1;
             if(nums[mid] == target){
                 return mid;
@@ -28,13 +28,6 @@ public class Solution {
             }
         }
         
-        if(left > right){
-            while(left > nums.length - 1)
-                left--;
-            while(left >= 0 && nums[left] > target)
-                left--;
-        }
-        
-        return left + 1;
+        return nums[left] < target ? left + 1 : left;
     }
 }
