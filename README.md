@@ -1,5 +1,5 @@
 # LeetCode
-My code of leetcode
+LeetCode题解。正在练习中，持续更新……
 
 Language: Java
 
