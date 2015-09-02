@@ -21,8 +21,8 @@ public class Solution
         
     public double findKth(int[] A, int startA, int endA, int[] B, int startB, int endB, int k)
     {
-        int lenA = endA - startA + 1;//lenA = A.length;
-        int lenB = endB - startB + 1;//lenB = B.length;
+        int lenA = endA - startA + 1;
+        int lenB = endB - startB + 1;
         if(lenA > lenB)
             return findKth(B, startB, endB, A, startA, endA, k);
         if(lenA == 0)
