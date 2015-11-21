@@ -7,4 +7,4 @@ Language: Java
 
 Author: Young Meng
 
-Email: MyoungMeng@gmail.com
+Email: myoungmeng@gmail.com
