@@ -29,15 +29,13 @@ public class Solution {
         
         k = len - k % len;
         
-        ListNode newHead = null;
         for (int i = 1; i <= k; i++) {
-            head = head.next;
-            p = p.next;//从原本的尾结点移动k次后，刚好到达新的头结点的前一个结点
+            p = p.next;
         }
         
-        newHead = head;
+        head = p.next;
         p.next = null;
         
-        return newHead;
+        return head;
     }
 }
